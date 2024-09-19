@@ -1,1 +1,17 @@
 /*  your css code here. If applicable */
+body{
+	background-color:#F6F7FB;
+	direction:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+}
+
+.container{
+	text-align:center;
+}
+.progress-container{
+	direction:flex;
+	justify-content:space-between;
+	
+}
