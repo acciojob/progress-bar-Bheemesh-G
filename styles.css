@@ -1,4 +1,13 @@
 /*  your css code here. If applicable */
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	font-family: Arial,sans-serif;
+	
+}
+
+
 body{
 	background-color:#F6F7FB;
 	direction:flex;
@@ -6,12 +15,66 @@ body{
 	align-items:center;
 	height:100vh;
 }
-
 .container{
 	text-align:center;
 }
 .progress-container{
-	direction:flex;
-	justify-content:space-between;
-	
+	display:flex;
+	justify-content:space-evenly;	
+	align-items:center;
+	position:relative;
+	width:100%;
+	max-width:400%;
+	margin-bottom:30px;
+	margin-top:50px;
 }
+.circle{
+	width:50px;
+	height:50px;
+	border:1px solid black;
+	border-radius:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+button{
+	width:75px;
+	height:30px;
+	align-items:center;
+	margin:20px;
+	border-radius:5px;
+	background-color:#3498DB;
+	color:white;
+	border:none;
+	cursor:pointer;
+	transition: background-color 0.3s;
+}
+
+.btn:disabled {
+    background-color: #b3c0c6;
+	cursor:not-allowed;
+}
+
+.progress{
+	position:absolute;
+	top:50%;
+	left:0;
+	right:0;
+	height:4px;
+	background-color:#3498db;
+	transform:translateY(-50%);
+	width:0;
+	transition: width 0.3s;
+	z-index:-1;
+}
+
+.active{
+	border-color:#3498db;
+	background-color:#3498db;
+	color:white;
+}
+
+
+
+
+
